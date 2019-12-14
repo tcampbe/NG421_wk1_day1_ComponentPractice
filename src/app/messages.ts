@@ -48,4 +48,4 @@ export default [{
     name: "Darcee Mattheis",
     date: "10/17/2016",
     message: "Visionary modular open system"
-  }],
+  }];
