@@ -6,7 +6,9 @@
     ></a>
     <ul class="dropdown-menu message-dropdown">
       <!-- <MessagePreview   -->
-        <app-message-preview></app-message-preview>
+      <app-message-preview
+        *ngFor="let message of Messages"
+      ></app-message-preview>
       <!-- MessagePreview   -->
       <li class="message-footer">
         <a href="#">Read All New Messages</a>

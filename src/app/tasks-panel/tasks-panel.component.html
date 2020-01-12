@@ -5,5 +5,13 @@
   </div>
   <div class="panel-body">
     <div class="list-group"></div>
+    <div class="list-group"></div>
+    <app-task-item *ngFor="let task of Tasks"></app-task-item>
+    <div class="text-right">
+      <a href="#"
+        >View All Activity
+        <i class="fa fa-arrow-circle-right"></i>
+      </a>
+    </div>
   </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import tasks from '../tasks'
 
 @Component({
   selector: 'app-tasks-panel',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tasks-panel.component.css']
 })
 export class TasksPanelComponent implements OnInit {
+  Tasks: any[];
 
   constructor() { }
 
   ngOnInit() {
+    this.Tasks = tasks;
   }
 
 }

@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import messages from "../messages";
 
 @Component({
-  selector: 'app-top-nav',
-  templateUrl: './top-nav.component.html',
-  styleUrls: ['./top-nav.component.css']
+  selector: "app-top-nav",
+  templateUrl: "./top-nav.component.html",
+  styleUrls: ["./top-nav.component.css"]
 })
 export class TopNavComponent implements OnInit {
-
-  constructor() { }
+  Messages: any[];
+  constructor() {}
 
   ngOnInit() {
+    this.Messages = messages;
   }
-
 }

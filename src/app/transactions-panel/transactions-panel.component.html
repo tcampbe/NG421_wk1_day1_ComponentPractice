@@ -17,11 +17,11 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td [(ngModel)]="Order.id"></td>
-            <td [(ngModel)]="Order.orderdate"></td>
-            <td [(ngModel)]="Order.ordertime"></td>
-            <td [(ngModel)]="Order.amount"></td>
+          <tr *ngFor="let order of Orders">
+            <td>{{order.id}}</td>
+            <td>{{order.orderDate}}</td>
+            <td>{{order.orderTime}}</td>
+            <td ngIf ="order.amount>1000">{{order.amount}}</td>
           </tr>
         </tbody>
       </table>
