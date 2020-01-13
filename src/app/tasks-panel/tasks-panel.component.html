@@ -1,12 +1,16 @@
-<p>tasks-panel works!</p>
-<div class="panel panel-default">
+<!-- <p>tasks-panel works!</p>
+ --><div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> Tasks Panel</h3>
   </div>
   <div class="panel-body">
     <div class="list-group"></div>
     <div class="list-group"></div>
-    <app-task-item *ngFor="let task of Tasks"></app-task-item>
+    
+<!--     <app-task-item *ngFor="let task of Tasks"></app-task-item>
+ -->
+    <app-task-item *ngFor="let task of Tasks" [taskItem]="task"></app-task-item>
+
     <div class="text-right">
       <a href="#"
         >View All Activity

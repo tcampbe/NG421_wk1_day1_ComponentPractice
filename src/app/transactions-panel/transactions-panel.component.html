@@ -1,5 +1,5 @@
-<p>transactions-panel works!</p>
-<div class="panel panel-default">
+<!-- <p>transactions-panel works!</p>
+ --><div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">
       <i class="fa fa-money fa-fw"></i> Transactions Panel
@@ -18,10 +18,30 @@
         </thead>
         <tbody>
           <tr *ngFor="let order of Orders">
-            <td>{{order.id}}</td>
-            <td>{{order.orderDate}}</td>
-            <td>{{order.orderTime}}</td>
-            <td ngIf ="order.amount>1000">{{order.amount}}</td>
+            <td *ngIf="order.amount > 1000" style="color:red">
+              {{ order.id }}
+            </td>
+            <td *ngIf="order.amount < 1000" style="color:black">
+              {{ order.id }}
+            </td>
+            <td *ngIf="order.amount > 1000" style="color:red">
+              {{ order.orderDate }}
+            </td>
+            <td *ngIf="order.amount < 1000" style="color:black">
+              {{ order.orderDate }}
+            </td>
+            <td *ngIf="order.amount > 1000" style="color:red">
+              {{ order.orderTime }}
+            </td>
+            <td *ngIf="order.amount < 1000" style="color:black">
+              {{ order.orderTime }}
+            </td>
+            <td *ngIf="order.amount > 1000" style="color:red">
+              {{ order.amount }}
+            </td>
+            <td *ngIf="order.amount < 1000" style="color:black">
+              {{ order.amount }}
+            </td>
           </tr>
         </tbody>
       </table>

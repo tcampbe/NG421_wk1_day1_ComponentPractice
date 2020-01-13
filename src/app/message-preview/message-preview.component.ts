@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-message-preview',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./message-preview.component.css']
 })
 export class MessagePreviewComponent implements OnInit {
-
+  @Input()message:"";
   constructor() { }
 
   ngOnInit() {
