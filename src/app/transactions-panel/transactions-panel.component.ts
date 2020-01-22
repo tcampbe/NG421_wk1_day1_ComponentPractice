@@ -7,7 +7,7 @@ import orders from "../orders";
   styleUrls: ["./transactions-panel.component.css"]
 })
 export class TransactionsPanelComponent implements OnInit {
-  Orders: any[];
+  private Orders: any[] = [];
   constructor() {}
 
   ngOnInit() {
