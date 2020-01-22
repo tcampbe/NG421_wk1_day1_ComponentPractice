@@ -7,10 +7,10 @@ import messages from "../messages";
   styleUrls: ["./top-nav.component.css"]
 })
 export class TopNavComponent implements OnInit {
-  private Messages: any[] = [];
+  private messages: any[] = [];
   constructor() {}
 
   ngOnInit() {
-    this.Messages = messages;
+    this.messages = messages;
   }
 }
