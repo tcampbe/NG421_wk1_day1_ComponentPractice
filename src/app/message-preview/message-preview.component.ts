@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./message-preview.component.css']
 })
 export class MessagePreviewComponent implements OnInit {
-  @Input()message:"";
+  @Input()private message: any;
   constructor() { }
 
   ngOnInit() {
