@@ -1,4 +1,4 @@
-window.state =  {
+window.state = {
   dateTime: "Yesterday at 4:32 PM",
   newComments: 23,
   newTasks: 12,
